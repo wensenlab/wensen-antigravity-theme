@@ -8,7 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-macOS-lightgrey.svg" alt="Platform">
   <img src="https://img.shields.io/badge/UI%20Localization-%E5%85%A8%E7%95%8C%E9%9D%A2%E6%97%A0%E6%84%9F%E6%B1%89%E5%8C%96-brightgreen.svg" alt="全界面汉化">
-  <img src="https://img.shields.io/badge/Antigravity-2.x%20Ready-blue.svg" alt="Antigravity">
+  <img src="https://img.shields.io/badge/Antigravity-v2.31.0%20Ready-blue.svg" alt="Antigravity">
   <img src="https://img.shields.io/badge/Node-18%2B%20%7C%2022%2B%20(Rec)-informational.svg" alt="Node">
   <img src="https://img.shields.io/badge/License-MIT-orange.svg" alt="License">
 </p>
@@ -130,7 +130,6 @@ node scripts/cli.js uninstall
 ```text
 wensen-antigravity-theme/
 ├── assets/
-│   ├── demo-preview.svg                           # 高清矢量界面效果预览（高对比版 + 全界面汉化）
 │   ├── themes.css                                 # 核心样式表（预设配色、字体链、Solid Ink 规则）
 │   ├── i18n.json                                  # 全界面汉化词典与排他白名单
 │   └── com.wensenlab.antigravity-theme.plist.template  # macOS LaunchAgent 常驻模板
