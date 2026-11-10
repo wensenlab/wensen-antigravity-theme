@@ -1,0 +1,214 @@
+/* ==========================================================================
+   WenSen Antigravity Theme Stylesheet
+   Author: 文森策 (WenSenLab_ ©文森策)
+   Strictly aligned with: https://bustling-politician-00f.notion.site/chuanban-antigravity-theme-patch-db7c5846f37546be9481cd791aed0554
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   §2.A 预设 1：高对比版 (high-contrast - 推荐首选 / 当前默认)
+   特点：暖燕麦色侧边栏 + 微暖净白主区 + 极淡暖棕输入框 + 立体深色框线 + 纯黑操作文字
+   -------------------------------------------------------------------------- */
+html[data-ag-preset="high-contrast"] body.theme-light {
+  --background: #FCFCFB !important;
+  --foreground: #1F1E1D !important;
+  --sidebar: #F7F5F0 !important;
+  --sidebar-secondary: #ECE9E1 !important;
+  --sidebar-border: rgba(0, 0, 0, 0.35) !important;
+  --border: rgba(0, 0, 0, 0.38) !important;
+  --card: #F9F7F2 !important;
+  --card-border: rgba(0, 0, 0, 0.35) !important;
+  --secondary-foreground: #0A0A0A !important;
+}
+
+/* 侧边栏底色与中缝分割线（严格对齐原作者方案：不向 .bg-sidebar 添加 border-right，避免虚拟列表产生圆角小尾巴） */
+html[data-ag-preset="high-contrast"] body.theme-light .bg-sidebar {
+  background-color: var(--sidebar) !important;
+}
+html[data-ag-preset="high-contrast"] body.theme-light .bg-border {
+  background-color: rgba(0, 0, 0, 0.28) !important;
+}
+
+/* 胶囊按钮与会话卡片边框强化 */
+html[data-ag-preset="high-contrast"] body.theme-light a[class*="inline-flex"],
+html[data-ag-preset="high-contrast"] body.theme-light .bg-sidebar a {
+  border-color: rgba(0, 0, 0, 0.32) !important;
+}
+
+/* 底部输入框模型文字纯黑化与深色外框（原作者 §1 & §2.A 硬性指标，兼容新版 agent-input-box 与经典侧栏选择器） */
+html[data-ag-preset="high-contrast"] body.theme-light #antigravity\.agentSidePanelInputBox span,
+html[data-ag-preset="high-contrast"] body.theme-light #antigravity\.agentSidePanelInputBox button,
+html[data-ag-preset="high-contrast"] body.theme-light [class*="agentSidePanelInputBox"] span,
+html[data-ag-preset="high-contrast"] body.theme-light [class*="agentSidePanelInputBox"] button,
+html[data-ag-preset="high-contrast"] body.theme-light [data-testid="agent-input-box"] span,
+html[data-ag-preset="high-contrast"] body.theme-light [data-testid="agent-input-box"] button {
+  color: #0A0A0A !important;
+  opacity: 1 !important;
+}
+
+/* --------------------------------------------------------------------------
+   §2.B 预设 2：ClaudeDesktop 净白 (claude-desktop-purewhite)
+   -------------------------------------------------------------------------- */
+html[data-ag-preset="claude-desktop-purewhite"] body.theme-light {
+  --background: #FCFCFB !important;
+  --sidebar: #FBFBF9 !important;
+  --sidebar-muted: #F3F2EF !important;
+  --sidebar-secondary: #EDECE9 !important;
+  --sidebar-border: #F0F0EE !important;
+}
+html[data-ag-preset="claude-desktop-purewhite"] body.theme-light .bg-sidebar {
+  background-color: var(--sidebar) !important;
+}
+html[data-ag-preset="claude-desktop-purewhite"] body.theme-light .bg-border {
+  background-color: #F0F0EE !important;
+}
+
+/* --------------------------------------------------------------------------
+   §2.C 预设 3：复古深色 (vintage-deep / 原 absoulutely-chuanban)
+   -------------------------------------------------------------------------- */
+html[data-ag-preset="vintage-deep"] body.theme-light {
+  --background: #FBF9F5 !important;
+  --foreground: #2C2B29 !important;
+  --primary: #D97757 !important;
+  --sidebar: #F1E8DC !important;
+  --sidebar-secondary: #E6DCCE !important;
+  --sidebar-border: #E0D4C3 !important;
+}
+html[data-ag-preset="vintage-deep"] body.theme-light .bg-sidebar {
+  background-color: var(--sidebar) !important;
+}
+html[data-ag-preset="vintage-deep"] body.theme-light .bg-border {
+  background-color: #E0D4C3 !important;
+}
+
+/* §5 Solid Ink — source 20261019-solid-consolidated-v2; light custom presets only. */
+html[data-ag-preset] body.theme-light .bg-sidebar a,
+html[data-ag-preset] body.theme-light .bg-sidebar button,
+html[data-ag-preset] body.theme-light .bg-sidebar [class*="truncate"],
+html[data-ag-preset] body.theme-light .bg-sidebar [class*="text-sm"],
+html[data-ag-preset] body.theme-light .bg-sidebar [class*="text-xs"],
+html[data-ag-preset] body.theme-light aside a,
+html[data-ag-preset] body.theme-light aside button {
+  font-weight: 450 !important;
+  letter-spacing: -0.012em !important;
+  color: #262422 !important;
+  text-rendering: optimizeLegibility !important;
+  text-shadow: 0 0 0.2px rgba(38, 36, 34, 0.35) !important;
+}
+
+html[data-ag-preset] body.theme-light button[data-testid="project-header"],
+html[data-ag-preset] body.theme-light button[data-project-card="true"],
+html[data-ag-preset] body.theme-light [data-project-label],
+html[data-ag-preset] body.theme-light [data-subtext] span[class*="text-muted"],
+html[data-ag-preset] body.theme-light span:has(> svg) + span {
+  font-weight: 450 !important;
+  color: #383533 !important;
+  text-shadow: 0 0 0.15px rgba(38, 36, 34, 0.25) !important;
+}
+
+html[data-ag-preset] body.theme-light button[data-testid="project-header"] span,
+html[data-ag-preset] body.theme-light button[data-project-card="true"] span {
+  font-weight: 450 !important;
+  color: #2C2B29 !important;
+  text-shadow: 0 0 0.15px rgba(38, 36, 34, 0.25) !important;
+  letter-spacing: -0.01em !important;
+}
+
+html[data-ag-preset] body.theme-light [data-testid="conversation-row-sidebar"][data-selected="true"],
+html[data-ag-preset] body.theme-light [data-testid="conversation-row-sidebar"][data-selected="true"] span,
+html[data-ag-preset] body.theme-light .bg-sidebar [data-active="true"],
+html[data-ag-preset] body.theme-light .bg-sidebar [data-active="true"] span,
+html[data-ag-preset] body.theme-light .bg-sidebar [aria-selected="true"] {
+  font-weight: 520 !important;
+  color: #0A0A0A !important;
+  text-shadow: 0 0 0.25px rgba(10, 10, 10, 0.4) !important;
+}
+
+html[data-ag-preset] body.theme-light .bg-sidebar [class*="text-muted"],
+html[data-ag-preset] body.theme-light .bg-sidebar [class*="text-[11px]"],
+html[data-ag-preset] body.theme-light .bg-sidebar [class*="uppercase"] {
+  font-weight: 500 !important;
+  letter-spacing: -0.005em !important;
+  color: #7A7670 !important;
+}
+
+html[data-ag-preset] body.theme-light button,
+html[data-ag-preset] body.theme-light [role="button"],
+html[data-ag-preset] body.theme-light select {
+  letter-spacing: -0.012em !important;
+}
+
+html[data-ag-preset] body.theme-light #antigravity\.agentSidePanelInputBox [class*="text-secondary-foreground"],
+html[data-ag-preset] body.theme-light #antigravity\.agentSidePanelInputBox button,
+html[data-ag-preset] body.theme-light #antigravity\.agentSidePanelInputBox span,
+html[data-ag-preset] body.theme-light [data-testid="agent-input-box"] [class*="text-secondary-foreground"],
+html[data-ag-preset] body.theme-light [data-testid="agent-input-box"] button,
+html[data-ag-preset] body.theme-light [data-testid="agent-input-box"] span {
+  font-weight: 500 !important;
+  letter-spacing: -0.012em !important;
+  text-shadow: 0 0 0.25px rgba(10, 10, 10, 0.4) !important;
+}
+
+/* §3 A — preserve source family order, including Mono Slab SC. 覆盖新版 Aux Pane、Swarm 视图与分栏组件 */
+html[data-ag-preset] body.theme-light nav,
+html[data-ag-preset] body.theme-light aside,
+html[data-ag-preset] body.theme-light button,
+html[data-ag-preset] body.theme-light input,
+html[data-ag-preset] body.theme-light [class*="sidebar"],
+html[data-ag-preset] body.theme-light [class*="header"],
+html[data-ag-preset] body.theme-light [class*="tab"],
+html[data-ag-preset] body.theme-light [role="tab"],
+html[data-ag-preset] body.theme-light [role="tablist"],
+html[data-ag-preset] body.theme-light [data-tab],
+html[data-ag-preset] body.theme-light [data-tiling-pane],
+html[data-ag-preset] body.theme-light [data-split-panes],
+html[data-ag-preset] body.theme-light [data-testid^="swarm-"],
+html[data-ag-preset] body.theme-light [role="menu"],
+html[data-ag-preset] body.theme-light [role="dialog"],
+html[data-ag-preset] body.theme-light [data-radix-popper-content-wrapper],
+html[data-ag-preset] body.theme-light [data-radix-menu-content],
+html[data-ag-preset] body.theme-light [class*="popover"],
+html[data-ag-preset] body.theme-light [class*="dropdown"] {
+  font-family: 'Anthropic Sans Web', 'Anthropic Sans Web Text', 'Anthropic Sans', 'Styrene B', system-ui, -apple-system, BlinkMacSystemFont, 'Sarasa UI SC', '更纱黑体 UI SC', sans-serif !important;
+}
+
+html[data-ag-preset] body.theme-light,
+html[data-ag-preset] body.theme-light .prose,
+html[data-ag-preset] body.theme-light .markdown,
+html[data-ag-preset] body.theme-light [class*="prose"],
+html[data-ag-preset] body.theme-light [class*="chat-message"],
+html[data-ag-preset] body.theme-light .markdown-body,
+html[data-ag-preset] body.theme-light [data-testid*="preview"],
+html[data-ag-preset] body.theme-light [class*="preview"],
+html[data-ag-preset] body.theme-light p,
+html[data-ag-preset] body.theme-light li,
+html[data-ag-preset] body.theme-light h1,
+html[data-ag-preset] body.theme-light h2,
+html[data-ag-preset] body.theme-light h3,
+html[data-ag-preset] body.theme-light h4,
+html[data-ag-preset] body.theme-light h5,
+html[data-ag-preset] body.theme-light h6 {
+  font-family: 'Anthropic Serif Web', 'Anthropic Serif Web Text Light', 'Anthropic Serif', 'Tiempos Text', Georgia, Cambria, 'Sarasa Mono Slab SC', '等距更纱黑体 Slab SC', 'Sarasa Gothic SC', '更纱黑体 SC', serif !important;
+  line-height: 1.62 !important;
+  letter-spacing: -0.003em !important;
+}
+
+html[data-ag-preset] body.theme-light {
+  --editor-font-family: 'Anthropic Mono Web', 'Anthropic Mono', 'Sarasa Mono Slab SC', '等距更纱黑体 Slab SC', ui-monospace, SFMono-Regular, monospace !important;
+}
+
+html[data-ag-preset] body.theme-light code,
+html[data-ag-preset] body.theme-light pre,
+html[data-ag-preset] body.theme-light .monaco-editor,
+html[data-ag-preset] body.theme-light .xterm,
+html[data-ag-preset] body.theme-light [class*="language-"],
+html[data-ag-preset] body.theme-light [class*="file-title"],
+html[data-ag-preset] body.theme-light [class*="file-path"] {
+  font-family: 'Anthropic Mono Web', 'Anthropic Mono', 'Sarasa Mono Slab SC', '等距更纱黑体 Slab SC', ui-monospace, SFMono-Regular, monospace !important;
+}
+
+html[data-ag-preset] body.theme-light div[contenteditable="true"],
+html[data-ag-preset] body.theme-light textarea,
+html[data-ag-preset] body.theme-light [data-composer],
+html[data-ag-preset] body.theme-light .ProseMirror {
+  font-family: 'Sarasa Mono Slab SC', '等距更纱黑体 Slab SC', 'Anthropic Mono Web', 'Anthropic Mono', monospace !important;
+}
