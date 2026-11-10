@@ -24,6 +24,10 @@
 > Google Antigravity 客户端目前官方原生仅提供英文，其复杂的系统偏好、审查机制（Review Modes）、Swarm 多智能体看板与后台任务配置对于许多中文知识工作者和开发者而言存在天然门槛与视觉负担。  
 > **本套件开箱即自带高质量全界面无感汉化**，无需破解或改包，一次注入即可让 Antigravity 拥有流畅自然的母语级中文交互体验与顶级的人文纸质感排版。
 
+<p align="center">
+  <img src="assets/demo-preview.svg" alt="WenSen Antigravity Theme 界面效果展示（经典高对比版 + 全界面汉化）" width="100%">
+</p>
+
 基于原作者 Noel / Anarcadia 的 [Solid Ink](https://bustling-politician-00f.notion.site/chuanban-antigravity-theme-patch-db7c5846f37546be9481cd791aed0554) 视觉方案，由 **WenSenLab · 文森策** 进行工程化重构与开源封装。方案通过本机 Chrome DevTools Protocol (CDP) 进行无侵入热注入，**不修改 App 资源包、不解包 asar、不破坏系统签名**，既保留了极致典雅的人文纸气质感，又具备高稳定性的工程防护机制与纯净中文支持。
 
 ---
@@ -126,6 +130,7 @@ node scripts/cli.js uninstall
 ```text
 wensen-antigravity-theme/
 ├── assets/
+│   ├── demo-preview.svg                           # 高清矢量界面效果预览（高对比版 + 全界面汉化）
 │   ├── themes.css                                 # 核心样式表（预设配色、字体链、Solid Ink 规则）
 │   ├── i18n.json                                  # 全界面汉化词典与排他白名单
 │   └── com.wensenlab.antigravity-theme.plist.template  # macOS LaunchAgent 常驻模板

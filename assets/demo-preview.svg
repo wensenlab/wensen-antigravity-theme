@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 840" width="100%" height="100%">
+  <defs>
+    <style>
+      .font-ui { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+      .font-serif { font-family: "Tiempos Text", Georgia, "Songti SC", "STSong", serif; }
+      .font-mono { font-family: "SFMono-Regular", Consolas, "Sarasa Mono Slab SC", monospace; }
+      .shadow { filter: drop-shadow(0 20px 50px rgba(0,0,0,0.18)) drop-shadow(0 0 1px rgba(0,0,0,0.15)); }
+    </style>
+    <filter id="win-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="18" stdDeviation="25" flood-color="#000" flood-opacity="0.18" />
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Window Container -->
+  <g filter="url(#win-shadow)">
+    <rect x="10" y="10" width="1300" height="820" rx="12" fill="#FCFCFB" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
+  </g>
+
+  <clipPath id="window-clip">
+    <rect x="10" y="10" width="1300" height="820" rx="12" />
+  </clipPath>
+
+  <g clip-path="url(#window-clip)">
+    <!-- Window Titlebar -->
+    <rect x="10" y="10" width="1300" height="42" fill="#F7F5F0" />
+    <line x1="10" y1="52" x2="1310" y2="52" stroke="rgba(0,0,0,0.12)" stroke-width="1" />
+
+    <!-- macOS Traffic Lights -->
+    <circle cx="32" cy="31" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width="0.8" />
+    <circle cx="52" cy="31" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width="0.8" />
+    <circle cx="72" cy="31" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width="0.8" />
+
+    <!-- Window Centered Title -->
+    <text x="615" y="36" class="font-ui" font-size="13" font-weight="550" fill="#383533" text-anchor="middle">Antigravity</text>
+    <rect x="660" y="21" width="125" height="20" rx="4" fill="#ECE9E1" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
+    <text x="722" y="35" class="font-ui" font-size="11" font-weight="600" fill="#0A0A0A" text-anchor="middle">高对比版 · 全界面汉化</text>
+
+    <!-- LEFT SIDEBAR: 燕麦暖色 #F7F5F0 -->
+    <g id="sidebar">
+      <rect x="10" y="52" width="240" height="778" fill="#F7F5F0" />
+      <line x1="250" y1="52" x2="250" y2="830" stroke="rgba(0,0,0,0.12)" stroke-width="1" />
+
+      <!-- New Chat Button -->
+      <rect x="22" y="66" width="216" height="34" rx="6" fill="#ECE9E1" stroke="rgba(0,0,0,0.22)" stroke-width="1" />
+      <text x="36" y="88" class="font-ui" font-size="13" font-weight="600" fill="#0A0A0A">新建对话</text>
+      <text x="222" y="89" class="font-ui" font-size="15" font-weight="600" fill="#0A0A0A" text-anchor="end">＋</text>
+
+      <!-- Section: Pinned -->
+      <text x="24" y="126" class="font-ui" font-size="11" font-weight="600" fill="#7A7670" letter-spacing="0.04em">置顶对话</text>
+      <!-- Active Conversation Item -->
+      <rect x="18" y="136" width="224" height="32" rx="5" fill="#ECE9E1" stroke="rgba(0,0,0,0.18)" stroke-width="1" />
+      <text x="30" y="157" class="font-ui" font-size="12.5" font-weight="600" fill="#0A0A0A">📌 智能座舱品牌定位推演</text>
+
+      <!-- Section: Recent -->
+      <text x="24" y="196" class="font-ui" font-size="11" font-weight="600" fill="#7A7670" letter-spacing="0.04em">最近会话</text>
+      <g transform="translate(18, 206)">
+        <text x="12" y="18" class="font-ui" font-size="12.5" font-weight="480" fill="#262422">💬 小红书爆款图文观点拆解</text>
+        <text x="12" y="46" class="font-ui" font-size="12.5" font-weight="480" fill="#262422">🛠️ Agent Skills 架构设计</text>
+        <text x="12" y="74" class="font-ui" font-size="12.5" font-weight="480" fill="#262422">📊 Q4 营销战役结案战报</text>
+      </g>
+
+      <!-- Section: Core Workspaces -->
+      <text x="24" y="322" class="font-ui" font-size="11" font-weight="600" fill="#7A7670" letter-spacing="0.04em">核心工作区</text>
+      <g transform="translate(18, 332)">
+        <text x="12" y="18" class="font-ui" font-size="12.5" font-weight="480" fill="#262422">📁 项目管理 (Projects)</text>
+        <text x="12" y="46" class="font-ui" font-size="12.5" font-weight="480" fill="#262422">⚙️ 自动化任务 (Automations)</text>
+        <text x="12" y="74" class="font-ui" font-size="12.5" font-weight="480" fill="#262422">🧩 技能与自定义 (Skills)</text>
+      </g>
+
+      <!-- Sidebar Footer -->
+      <line x1="20" y1="765" x2="240" y2="765" stroke="rgba(0,0,0,0.08)" stroke-width="1" />
+      <text x="32" y="792" class="font-ui" font-size="12.5" font-weight="480" fill="#262422">⚙️ 系统设置 (Settings)</text>
+      <text x="32" y="814" class="font-ui" font-size="11" font-weight="500" fill="#7A7670">WenSenLab · 文森策</text>
+    </g>
+
+    <!-- MAIN CHAT AREA -->
+    <g id="main-chat">
+      <!-- Navbar -->
+      <rect x="250" y="52" width="810" height="48" fill="#FCFCFB" />
+      <line x1="250" y1="100" x2="1060" y2="100" stroke="rgba(0,0,0,0.08)" stroke-width="1" />
+
+      <text x="272" y="81" class="font-ui" font-size="14" font-weight="650" fill="#1F1E1D">智能座舱品牌定位推演与心智反切</text>
+      
+      <!-- Status Badge -->
+      <rect x="495" y="66" width="180" height="24" rx="12" fill="#F4F1EA" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
+      <circle cx="508" cy="78" r="3.5" fill="#27C93F" />
+      <text x="518" y="82" class="font-ui" font-size="11.5" font-weight="500" fill="#2C2B29">默认模式 (敏感操作前询问)</text>
+
+      <!-- Right Action Chips -->
+      <g transform="translate(770, 65)">
+        <rect x="0" y="0" width="112" height="26" rx="5" fill="#F7F5F0" stroke="rgba(0,0,0,0.18)" stroke-width="1" />
+        <text x="56" y="17" class="font-ui" font-size="11.5" font-weight="550" fill="#262422" text-anchor="middle">✨ Gemini 2.5 Pro ▾</text>
+
+        <rect x="120" y="0" width="94" height="26" rx="5" fill="#F7F5F0" stroke="rgba(0,0,0,0.18)" stroke-width="1" />
+        <text x="167" y="17" class="font-ui" font-size="11.5" font-weight="550" fill="#262422" text-anchor="middle">代码审查 (Review)</text>
+
+        <rect x="222" y="0" width="62" height="26" rx="5" fill="#F7F5F0" stroke="rgba(0,0,0,0.18)" stroke-width="1" />
+        <text x="253" y="17" class="font-ui" font-size="11.5" font-weight="550" fill="#262422" text-anchor="middle">🐝 蜂群</text>
+      </g>
+
+      <!-- Messages Stream -->
+      <!-- User Prompt -->
+      <g transform="translate(560, 118)">
+        <text x="475" y="0" class="font-ui" font-size="11.5" font-weight="500" fill="#7A7670" text-anchor="end">文森策 · 刚才</text>
+        <rect x="0" y="8" width="475" height="52" rx="10" fill="#ECE9E1" stroke="rgba(0,0,0,0.18)" stroke-width="1" />
+        <text x="18" y="30" class="font-ui" font-size="13" font-weight="480" fill="#1F1E1D">帮我针对新一代智能座舱做一份品牌定位推演，梳理出与传统造车新</text>
+        <text x="18" y="48" class="font-ui" font-size="13" font-weight="480" fill="#1F1E1D">势力的差异化四象限与核心价值主张。</text>
+      </g>
+
+      <!-- Agent Response -->
+      <g transform="translate(272, 196)">
+        <!-- AG Avatar -->
+        <rect x="0" y="4" width="32" height="32" rx="6" fill="#1F1E1D" />
+        <text x="16" y="24" class="font-ui" font-size="13" font-weight="700" fill="#FFF" text-anchor="middle">AG</text>
+
+        <!-- Meta -->
+        <text x="44" y="17" class="font-ui" font-size="12" font-weight="650" fill="#1F1E1D">Antigravity</text>
+        <rect x="116" y="6" width="130" height="18" rx="3" fill="#F4F0EB" stroke="rgba(0,0,0,0.14)" stroke-width="1" />
+        <text x="181" y="19" class="font-ui" font-size="10.5" font-weight="600" fill="#0A0A0A" text-anchor="middle">brand-strategy-analyst</text>
+        <text x="256" y="17" class="font-ui" font-size="11.5" font-weight="500" fill="#7A7670">刚才</text>
+
+        <!-- Title & Intro -->
+        <text x="44" y="42" class="font-ui" font-size="15.5" font-weight="650" fill="#0A0A0A">智能座舱差异化心智反切矩阵</text>
+        <text x="44" y="63" class="font-serif" font-size="13" fill="#2C2B29">从「情感共鸣密度」与「科技交互纵深」双轴建立定位四象限。针对当前新势力“堆屏幕、堆算力、同质化严重”的行业痛点：</text>
+
+        <!-- Matrix Table -->
+        <g transform="translate(44, 76)">
+          <rect x="0" y="0" width="715" height="152" rx="6" fill="#FFF" stroke="rgba(0,0,0,0.2)" stroke-width="1" />
+          
+          <!-- Table Header -->
+          <rect x="0" y="0" width="715" height="28" rx="6" fill="#F7F5F0" />
+          <line x1="0" y1="28" x2="715" y2="28" stroke="rgba(0,0,0,0.14)" stroke-width="1" />
+          <text x="14" y="19" class="font-ui" font-size="11.5" font-weight="650" fill="#262422">定位象限</text>
+          <text x="130" y="19" class="font-ui" font-size="11.5" font-weight="650" fill="#262422">核心心智诉求</text>
+          <text x="320" y="19" class="font-ui" font-size="11.5" font-weight="650" fill="#262422">代表交互特征</text>
+          <text x="535" y="19" class="font-ui" font-size="11.5" font-weight="650" fill="#262422">竞品固有盲区</text>
+
+          <!-- Row 1 (Highlight) -->
+          <rect x="1" y="29" width="713" height="40" fill="#FAF7F2" />
+          <line x1="0" y1="69" x2="715" y2="69" stroke="rgba(0,0,0,0.1)" stroke-width="1" />
+          <text x="14" y="54" class="font-ui" font-size="12" font-weight="700" fill="#0A0A0A">人文知性空间 ⭐</text>
+          <text x="130" y="54" class="font-serif" font-size="12" fill="#0A0A0A">精神松弛 · 知性独处 · 高审美</text>
+          <text x="320" y="54" class="font-serif" font-size="12" fill="#0A0A0A">实体旋钮阻尼感 + 苏式留白界面</text>
+          <text x="535" y="54" class="font-serif" font-size="12" fill="#0A0A0A">摆脱屏幕参数轰炸与冰冷算法</text>
+
+          <!-- Row 2 -->
+          <rect x="1" y="70" width="713" height="40" fill="#FFF" />
+          <line x1="0" y1="110" x2="715" y2="110" stroke="rgba(0,0,0,0.1)" stroke-width="1" />
+          <text x="14" y="95" class="font-ui" font-size="12" font-weight="550" fill="#2C2B29">数字极客座舱</text>
+          <text x="130" y="95" class="font-serif" font-size="12" fill="#4A4642">多屏互联 · 极速算力 · 炫酷交互</text>
+          <text x="320" y="95" class="font-serif" font-size="12" fill="#4A4642">3D 渲染动效 · 自动驾驶大屏可视化</text>
+          <text x="535" y="95" class="font-serif" font-size="12" fill="#4A4642">缺乏情绪温度，易产生信息疲劳</text>
+
+          <!-- Row 3 -->
+          <rect x="1" y="111" width="713" height="40" fill="#FFF" />
+          <text x="14" y="136" class="font-ui" font-size="12" font-weight="550" fill="#2C2B29">家用移动影院</text>
+          <text x="130" y="136" class="font-serif" font-size="12" fill="#4A4642">大空间 · 娱乐视听 · 全家共享</text>
+          <text x="320" y="136" class="font-serif" font-size="12" fill="#4A4642">吸顶折叠屏 · 零重力座椅 · 亲子互动</text>
+          <text x="535" y="136" class="font-serif" font-size="12" fill="#4A4642">偏向功能堆叠，缺乏个人精神锚点</text>
+        </g>
+
+        <!-- Quote Box -->
+        <g transform="translate(44, 238)">
+          <rect x="0" y="0" width="715" height="38" rx="4" fill="#F9F7F2" stroke="rgba(0,0,0,0.12)" stroke-width="1" />
+          <rect x="0" y="0" width="3.5" height="38" rx="2" fill="#D97757" />
+          <text x="16" y="24" class="font-ui" font-size="13" font-weight="650" fill="#0A0A0A">核心单一主张 (SMP)：<tspan font-weight="480" font-family="'Tiempos Text', Georgia, serif">“在奔波的时代里，造一座移动的人文居所。”</tspan></text>
+        </g>
+
+        <!-- Strategy Tip -->
+        <text x="44" y="296" class="font-ui" font-size="12" fill="#4A4642">💡 策略建议：避开算力数字军备竞赛，将传播锚点锁定在“重获专注与独处的松弛感”，击穿 30-45 岁高净值知性中产心智。</text>
+      </g>
+
+      <!-- Bottom Input Box Area -->
+      <g transform="translate(272, 705)">
+        <rect x="0" y="0" width="760" height="98" rx="8" fill="#F9F7F2" stroke="rgba(0,0,0,0.32)" stroke-width="1" />
+        <text x="16" y="30" class="font-ui" font-size="13.5" font-weight="450" fill="#1F1E1D">请帮我把上述核心价值主张，进一步细化为三套不同媒介渠道的整合营销战役大纲...</text>
+        
+        <line x1="12" y1="60" x2="748" y2="60" stroke="rgba(0,0,0,0.08)" stroke-width="1" />
+        
+        <!-- Input Tools -->
+        <g transform="translate(14, 68)">
+          <rect x="0" y="0" width="72" height="22" rx="4" fill="#ECE9E1" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
+          <text x="36" y="15" class="font-ui" font-size="11" font-weight="500" fill="#383533" text-anchor="middle">📎 附加资料</text>
+
+          <rect x="78" y="0" width="112" height="22" rx="4" fill="#ECE9E1" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
+          <text x="134" y="15" class="font-ui" font-size="11" font-weight="500" fill="#383533" text-anchor="middle">🌐 联网检索: 已就绪</text>
+
+          <rect x="196" y="0" width="68" height="22" rx="4" fill="#ECE9E1" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
+          <text x="230" y="15" class="font-ui" font-size="11" font-weight="500" fill="#383533" text-anchor="middle">⚡ 极速执行</text>
+        </g>
+
+        <!-- Model indicator & send button -->
+        <text x="696" y="83" class="font-ui" font-size="12" font-weight="600" fill="#0A0A0A" text-anchor="end">Gemini 2.5 Pro</text>
+        <circle cx="728" cy="79" r="13" fill="#0A0A0A" />
+        <text x="728" y="84" class="font-ui" font-size="14" font-weight="700" fill="#FFF" text-anchor="middle">↑</text>
+      </g>
+    </g>
+
+    <!-- RIGHT AUXILIARY PANE: 250px -->
+    <g id="aux-pane">
+      <rect x="1060" y="52" width="250" height="778" fill="#F7F5F0" />
+      <line x1="1060" y1="52" x2="1060" y2="830" stroke="rgba(0,0,0,0.12)" stroke-width="1" />
+
+      <!-- Header -->
+      <text x="1076" y="78" class="font-ui" font-size="12.5" font-weight="650" fill="#0A0A0A">后台任务 (2)</text>
+      <circle cx="1256" cy="74" r="3.5" fill="#27C93F" />
+      <text x="1265" y="78" class="font-ui" font-size="11" font-weight="600" fill="#27C93F">运行中</text>
+      <line x1="1074" y1="88" x2="1296" y2="88" stroke="rgba(0,0,0,0.1)" stroke-width="1" />
+
+      <!-- Task Card 1 -->
+      <g transform="translate(1074, 98)">
+        <rect x="0" y="0" width="222" height="66" rx="6" fill="#FFF" stroke="rgba(0,0,0,0.18)" stroke-width="1" />
+        <text x="12" y="20" class="font-ui" font-size="12" font-weight="650" fill="#1F1E1D">✓ 竞品攻防知识库检索</text>
+        <text x="12" y="38" class="font-ui" font-size="11" fill="#7A7670">检索 6 份智驾座舱行业研报</text>
+        <text x="12" y="54" class="font-ui" font-size="11" font-weight="600" fill="#27C93F">已完成 · 耗时 0.6s</text>
+      </g>
+
+      <!-- Task Card 2 -->
+      <g transform="translate(1074, 172)">
+        <rect x="0" y="0" width="222" height="66" rx="6" fill="#FFF" stroke="rgba(0,0,0,0.18)" stroke-width="1" />
+        <text x="12" y="20" class="font-ui" font-size="12" font-weight="650" fill="#1F1E1D">⏳ 策略定位四象限推演</text>
+        <text x="12" y="38" class="font-ui" font-size="11" fill="#7A7670">调用 brand-strategy-analyst</text>
+        <text x="12" y="54" class="font-ui" font-size="11" font-weight="600" fill="#D97757">生成中 85%</text>
+      </g>
+
+      <!-- Deliverables Section -->
+      <text x="1076" y="265" class="font-ui" font-size="10.5" font-weight="650" fill="#7A7670" letter-spacing="0.04em">交付工作清单 (DELIVERABLES)</text>
+      
+      <g transform="translate(1074, 276)">
+        <rect x="0" y="0" width="222" height="32" rx="4" fill="#ECE9E1" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
+        <text x="12" y="20" class="font-ui" font-size="12" font-weight="500" fill="#262422">📄 smart-cockpit-strategy.md</text>
+      </g>
+
+      <g transform="translate(1074, 316)">
+        <rect x="0" y="0" width="222" height="32" rx="4" fill="#ECE9E1" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
+        <text x="12" y="20" class="font-ui" font-size="12" font-weight="500" fill="#262422">📊 positioning-matrix.svg</text>
+      </g>
+    </g>
+  </g>
+</svg>
